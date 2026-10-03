@@ -1,328 +1,348 @@
 <!DOCTYPE html>
-
-<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-container": "#3e6649", "on-tertiary": "#ffffff", "on-secondary-container": "#6d3a00", "on-primary": "#ffffff", "on-secondary": "#ffffff", "on-tertiary-fixed": "#1f1b10", "primary": "#264e33", "on-background": "#1c1c19", "outline": "#727971", "surface-tint": "#3f674a", "surface-container-highest": "#e5e2dd", "surface-dim": "#dcdad5", "on-primary-fixed-variant": "#274f34", "secondary-fixed": "#ffdcc2", "surface-container-lowest": "#ffffff", "on-primary-fixed": "#00210d", "background": "#fcf9f4", "tertiary-container": "#635d4f", "on-error-container": "#93000a", "on-surface": "#1c1c19", "tertiary-fixed-dim": "#cec6b5", "inverse-surface": "#31302d", "on-tertiary-container": "#dfd6c5", "secondary-container": "#fea047", "surface-bright": "#fcf9f4", "on-tertiary-fixed-variant": "#4b4639", "on-error": "#ffffff", "on-secondary-fixed-variant": "#6d3a00", "on-surface-variant": "#414942", "on-secondary-fixed": "#2e1500", "outline-variant": "#c1c8bf", "on-primary-container": "#b5e2bd", "surface-container-high": "#ebe8e3", "inverse-on-surface": "#f3f0eb", "error-container": "#ffdad6", "secondary": "#8f4e00", "surface-variant": "#e5e2dd", "tertiary": "#4b4639", "error": "#ba1a1a", "surface-container-low": "#f6f3ee", "tertiary-fixed": "#eae2d0", "primary-fixed-dim": "#a5d1ad", "secondary-fixed-dim": "#ffb77a", "surface": "#fcf9f4", "inverse-primary": "#a5d1ad", "surface-container": "#f0ede9", "primary-fixed": "#c0edc8" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "0.75rem", "space-md": "1rem", "space-lg": "1.5rem", "margin-desktop": "3rem", "space-xl": "2.25rem", "gutter": "1rem", "space-xs": "0.25rem", "margin-tablet": "2rem", "space-sm": "0.5rem", "margin": "1.25rem" }, "fontFamily": { "label-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Epilogue"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Epilogue"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Epilogue"], "headline-md": ["Epilogue"], "headline-xl-mobile": ["Epilogue"], "headline-xl": ["Epilogue"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-xl-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="PawNutri Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApnUqQdVKpDA23orwbO4YvXAHD4Q7Vm111idJe3BK2V-avVE3uMWgWWYXLeWUZ-OE4vVBtNNfALi6pPLYi43JMbmsxPhsXMPDxYavo4LzPG2ERl3aAYrv1KyctRlAy7QMzEc67UvVcimJOBJbCCQs4kVVKI-Fk3hHsiM5ExBGjPRlfUjlVh0o9FBdjTh68JE0vdjhPx_gxi4wT6jB75ZO18377_QTunrCYpmCUIME3h7U8ymDoPC-I"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none tracking-tight">PawNutri</span><span class="font-label-sm text-label-sm text-secondary leading-none uppercase tracking-wider">Gourmet &amp; Care</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Notificaciones" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary-container"></span></button><button aria-label="Cesta de compra" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150"><span class="material-symbols-outlined text-[22px]">shopping_basket</span><span class="absolute top-1.5 right-1.5 min-w-[16px] h-4 px-1 rounded-full bg-primary text-on-primary font-label-sm text-[10px] flex items-center justify-center">2</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
-<!-- Top Greeting & Breed Switcher Header -->
-<section class="px-margin pt-space-md pb-space-xs">
-<div class="flex items-center justify-between mb-space-xs">
-<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed">
-<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">eco</span>
-<span class="font-label-sm text-label-sm uppercase tracking-wider">Cocina Artesanal Canina</span>
-</div>
-<span class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1">
-<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span> Cocinado hoy
-      </span>
-</div>
-<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-primary tracking-tight leading-tight">
-      Nutrición natural a la medida de tu mejor amigo
-    </h1>
-<p class="font-body-md text-body-md text-on-surface-variant mt-1.5">
-      Ingredientes reales cocinados al vapor a baja temperatura para conservar nutrientes vivos y sabor irresistible.
-    </p>
-<!-- Breed Quick Filter Tabs (Tactile selection) -->
-<div class="flex items-center gap-space-sm mt-space-md overflow-x-auto pb-1" id="breed-filter-group">
-<button class="breed-tab flex items-center gap-1.5 px-4 py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all duration-200" id="btn-all" onclick="filterBreed('all')" type="button">
-<span class="material-symbols-outlined text-[18px]">tune</span>
-<span>Todos los planes</span>
-</button>
-<button class="breed-tab flex items-center gap-1.5 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all duration-200" id="btn-beagle" onclick="filterBreed('beagle')" type="button">
-<span class="material-symbols-outlined text-[18px]">pets</span>
-<span>Beagles activos</span>
-</button>
-<button class="breed-tab flex items-center gap-1.5 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all duration-200" id="btn-poodle" onclick="filterBreed('poodle')" type="button">
-<span class="material-symbols-outlined text-[18px]">cruelty_free</span>
-<span>Poodles &amp; Caniches</span>
-</button>
-</div>
-</section>
-<!-- Featured Breed Tailored Nutrition Plans Cards -->
-<section class="px-margin pt-space-sm space-y-space-md">
-<!-- Beagle Tailored Card -->
-<article class="breed-card beagle-item rounded-xl bg-surface-container-lowest shadow-[0_8px_24px_-4px_rgba(62,102,73,0.08)] overflow-hidden transition-transform duration-200 active:scale-[0.99]">
-<div class="relative w-full h-56 bg-surface-container">
-<img alt="Beagle feliz frente a su cuenco de comida natural cocinada con vegetales frescos y pollo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD07mDdJ4FIPrriwADZ99lOlbc7SDy1ky5XUEw_cOPCgndDGm5FbQiEYJRsny2MtuerpfDpfREUmMpVcZWCLQc3ARX2RzEpd7_VJVx_vpn8X5VTlV33PUazMy10OXibBEwC-O_72T6SA9QQwjct1vCLi_1BwcGcqBHvk0jUm9d2Hc3wbJKiI3FFdht4LpdXZtcn8SC3PVFaYhZX5eAJryFhNtgB5y6p-dEJLqXIamiNQqbjGk1FM8YH"/>
-<!-- Breed Badge Floating -->
-<div class="absolute top-3 left-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
-<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
-<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wide">Especial Beagles</span>
-</div>
-<!-- Rating Pill -->
-<div class="absolute top-3 right-3 flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest/95 backdrop-blur-md text-on-surface shadow-sm">
-<span class="material-symbols-outlined text-[16px] text-secondary-container" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="font-label-md text-label-md font-bold">4.9</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">(142)</span>
-</div>
-<!-- Calorie Control Tag bottom ribbon -->
-<div class="absolute bottom-2 left-3 right-3 flex items-center justify-between px-3 py-1.5 rounded-lg bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface">
-<div class="flex items-center gap-1.5">
-<span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">scale</span>
-<span class="font-label-sm text-label-sm">Control calórico inteligente &amp; saciedad</span>
-</div>
-<span class="font-label-sm text-label-sm text-secondary-fixed">Gluten Free</span>
-</div>
-</div>
-<div class="p-space-md flex flex-col">
-<div class="flex items-start justify-between gap-2">
-<div>
-<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight">Plan Vitalidad Beagle</h2>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Control de peso, energía prolongada y articulaciones fuertes</p>
-</div>
-<div class="text-right shrink-0">
-<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Suscripción</span>
-<span class="font-headline-sm text-headline-sm text-primary font-bold">$34.99</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant block">/mes</span>
-</div>
-</div>
-<!-- Ingredient Micro Pills -->
-<div class="flex flex-wrap gap-1.5 mt-space-sm">
-<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
-<span class="material-symbols-outlined text-[13px] text-primary">restaurant</span> Pollo de granja 55%
-          </span>
-<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
-<span class="material-symbols-outlined text-[13px] text-primary">spa</span> Guisantes &amp; Zanahoria
-          </span>
-<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
-<span class="material-symbols-outlined text-[13px] text-secondary">nutrition</span> Arándanos rojos
-          </span>
-</div>
-<p class="font-body-md text-body-md text-on-surface mt-space-sm leading-relaxed">
-          Fórmula con alto contenido de fibra saciante para canalizar el apetito insaciable de los beagles, reforzada con condroprotectores para proteger caderas y patas ágiles.
-        </p>
-<!-- CTA row -->
-<div class="flex items-center gap-space-sm mt-space-md pt-space-xs">
-<button class="flex-1 h-12 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 transition-all shadow-sm" type="button">
-<span>Ver menú &amp; porción</span>
-<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</button>
-<button aria-label="Guardar receta beagle en favoritos" class="w-12 h-12 rounded-full bg-surface-container hover:bg-surface-container-high text-primary flex items-center justify-center transition-colors" type="button">
-<span class="material-symbols-outlined text-[20px]">bookmark_border</span>
-</button>
-</div>
-</div>
-</article>
-<!-- Poodle Tailored Card -->
-<article class="breed-card poodle-item rounded-xl bg-surface-container-lowest shadow-[0_8px_24px_-4px_rgba(62,102,73,0.08)] overflow-hidden transition-transform duration-200 active:scale-[0.99]">
-<div class="relative w-full h-56 bg-surface-container">
-<img alt="Poodle caniche canela esponjoso posando contento junto a sus dos boles con receta de salmón y arándanos" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYwsbjOD9GjodUtn4KxfKtCB-vG2XWQ-IFVJi26vMRpk4LsTbd2znHjBeefGv8EY9VJ3nqqXwuWA1QHhIG_lGT9N1IHdfZtUExsn12msvRXPJm33tSyi0RmdrVfM6Qp5on_UkT6oI6YMo4oMwyi9PAehh5osvmapZBfJz60YIuW6RiO4Js-omsY8_NsNpwa0RwPe422kGXLp46b4c5QJhelqtEOdj_vaqa0fP7jepT5DYZwk3LFEq3"/>
-<!-- Breed Badge Floating -->
-<div class="absolute top-3 left-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
-<span class="w-2 h-2 rounded-full bg-primary"></span>
-<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wide">Especial Poodles</span>
-</div>
-<!-- Rating Pill -->
-<div class="absolute top-3 right-3 flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest/95 backdrop-blur-md text-on-surface shadow-sm">
-<span class="material-symbols-outlined text-[16px] text-secondary-container" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="font-label-md text-label-md font-bold">5.0</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">(189)</span>
-</div>
-<!-- Shiny Coat Tag bottom ribbon -->
-<div class="absolute bottom-2 left-3 right-3 flex items-center justify-between px-3 py-1.5 rounded-lg bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface">
-<div class="flex items-center gap-1.5">
-<span class="material-symbols-outlined text-[16px] text-secondary-fixed">auto_awesome</span>
-<span class="font-label-sm text-label-sm">Rizos sedosos + Alta palatabilidad</span>
-</div>
-<span class="font-label-sm text-label-sm text-primary-fixed-dim">Digestión Fácil</span>
-</div>
-</div>
-<div class="p-space-md flex flex-col">
-<div class="flex items-start justify-between gap-2">
-<div>
-<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight">Plan Piel y Pelaje Radiante Poodle</h2>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Rico en Omega 3-6, biotina y digestión hipoalergénica</p>
-</div>
-<div class="text-right shrink-0">
-<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Suscripción</span>
-<span class="font-headline-sm text-headline-sm text-primary font-bold">$38.99</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant block">/mes</span>
-</div>
-</div>
-<!-- Ingredient Micro Pills -->
-<div class="flex flex-wrap gap-1.5 mt-space-sm">
-<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
-<span class="material-symbols-outlined text-[13px] text-secondary">water_drop</span> Salmón del Atlántico 50%
-          </span>
-<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
-<span class="material-symbols-outlined text-[13px] text-primary">eco</span> Espinaca tierna
-          </span>
-<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
-<span class="material-symbols-outlined text-[13px] text-primary-container">science</span> Probióticos vivos
-          </span>
-</div>
-<p class="font-body-md text-body-md text-on-surface mt-space-sm leading-relaxed">
-          Diseñado para paladares exigentes y pelajes que requieren hidratación intensiva. Reduce irritaciones cutáneas, lagrimeo y refuerza la barrera dérmica de los rizos.
-        </p>
-<!-- CTA row -->
-<div class="flex items-center gap-space-sm mt-space-md pt-space-xs">
-<button class="flex-1 h-12 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 transition-all shadow-sm" type="button">
-<span>Ver menú &amp; porción</span>
-<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</button>
-<button aria-label="Guardar receta poodle en favoritos" class="w-12 h-12 rounded-full bg-surface-container hover:bg-surface-container-high text-primary flex items-center justify-center transition-colors" type="button">
-<span class="material-symbols-outlined text-[20px]">bookmark_border</span>
-</button>
-</div>
-</div>
-</article>
-</section>
-<!-- 100% Human Grade Badges Section -->
-<section class="mt-space-lg px-margin">
-<div class="rounded-xl bg-surface-container-low p-space-md">
-<div class="flex items-center gap-2 mb-space-sm">
-<span class="material-symbols-outlined text-primary text-[24px]">verified</span>
-<h3 class="font-headline-sm text-headline-sm text-primary">Ingredientes 100% Grado Humano</h3>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
-        Comida real cocinada en cocinas de estándar gastronómico humano con trazabilidad total. Sin subproductos, harinas misteriosas ni químicos.
-      </p>
-<div class="grid grid-cols-2 gap-space-sm">
-<div class="p-3 rounded-lg bg-surface-container-lowest flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shrink-0">
-<span class="material-symbols-outlined text-[20px]">egg_alt</span>
-</div>
-<div>
-<span class="font-label-md text-label-md text-on-surface block font-bold">Carne fresca</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Cortes enteros certificados</span>
-</div>
-</div>
-<div class="p-3 rounded-lg bg-surface-container-lowest flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed shrink-0">
-<span class="material-symbols-outlined text-[20px]">do_not_disturb_on</span>
-</div>
-<div>
-<span class="font-label-md text-label-md text-on-surface block font-bold">Sin conservantes</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Congelado ultrarrápido</span>
-</div>
-</div>
-<div class="p-3 rounded-lg bg-surface-container-lowest flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed shrink-0">
-<span class="material-symbols-outlined text-[20px]">medical_services</span>
-</div>
-<div>
-<span class="font-label-md text-label-md text-on-surface block font-bold">Aval veterinario</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Ratio AAFCO / FEDIAF</span>
-</div>
-</div>
-<div class="p-3 rounded-lg bg-surface-container-lowest flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shrink-0">
-<span class="material-symbols-outlined text-[20px]">ac_unit</span>
-</div>
-<div>
-<span class="font-label-md text-label-md text-on-surface block font-bold">Cadena de frío</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Envío fresco semanal</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Natural Treats & Snacks Carousel -->
-<section class="mt-space-lg mb-space-lg">
-<div class="px-margin flex items-center justify-between mb-space-sm">
-<div>
-<h3 class="font-headline-sm text-headline-sm text-primary">Premios &amp; Snacks Naturales</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Ideales para adiestramiento positivo y refuerzo dental</p>
-</div>
-<a class="font-label-sm text-label-sm text-secondary uppercase font-bold flex items-center gap-0.5" href="#">
-        Ver todo <span class="material-symbols-outlined text-[16px]">chevron_right</span>
-</a>
-</div>
-<!-- Horizontal Scrollable Container -->
-<div class="flex gap-space-sm overflow-x-auto px-margin pb-2 snap-x">
-<!-- Snack 1 -->
-<div class="min-w-[240px] w-[240px] rounded-xl bg-surface-container-lowest p-3 shadow-sm snap-start flex flex-col justify-between">
-<div class="relative w-full h-32 rounded-lg overflow-hidden bg-surface-container">
-<img class="w-full h-full object-cover" data-alt="Close up photography of artisanal crunchy oat and apple dog treats baked with warm cinnamon and flaxseed, placed on rustic wooden tray with soft natural lighting and warm beige tone kitchen background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfB8znJNdEx27KV1lNZ4YMW2ZEcihBWBKW2rk_RlL6g4WvnsT8UzYW7iAm02dP_wHjYXBOigLMpC88p64kFDIRrkhf8YP4tgjM65cWwtTqE8llqiO4a7lq8uEIyCNk88osEcYNmOccUs_IZEVvdlx_zVK5GHkLjXkQPnNdxNKGV3299MqseQQ8ZmcPyeY33879s8oY08j6Sj6Rhf7Tf4iV3h_SOMjM69WQq4NVl5vzSlEIysLASiMZ"/>
-<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px] uppercase">Para Beagles</span>
-</div>
-<div class="mt-2.5">
-<h4 class="font-label-lg text-label-lg text-on-surface line-clamp-1 font-bold">Galletas Crujientes de Avena &amp; Manzana</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">Horneadas a fuego lento, bajas en grasa y ricas en fibra digestible.</p>
-</div>
-<div class="flex items-center justify-between mt-3 pt-2">
-<span class="font-label-lg text-label-lg text-primary font-bold">$7.50</span>
-<button aria-label="Añadir galletas al bol" class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors" type="button">
-<span class="material-symbols-outlined text-[18px]">add</span>
-</button>
-</div>
-</div>
-<!-- Snack 2 -->
-<div class="min-w-[240px] w-[240px] rounded-xl bg-surface-container-lowest p-3 shadow-sm snap-start flex flex-col justify-between">
-<div class="relative w-full h-32 rounded-lg overflow-hidden bg-surface-container">
-<img class="w-full h-full object-cover" data-alt="Artisanal hypoallergenic green spirulina and mint dog dental chews arranged in a ceramic bowl with herbs, clean bright Scandinavian warm studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt9KMIpFZvTDV3R4cpFdNC1lVgWPsEK3UAZHo2YMXV_alg4qA5F_NO2wevdaqTcELIbSeJpn0koJ7EFEJSl74cjUuPSQab5WnvGr31JDE7Dqog_Xr3sSmSQaTSQ8vhRE6r2_sk0_Ej3N2To6Mt34urDSG8VPOe1Dq7iNFg71gEQR9438osVzXwFsmiVYEfbP26Fm7FwHZA7ly6cr0ftYBseneSYz5QDOnEuhxmFndhjbqUn89_E_O_"/>
-<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-[10px] uppercase">Para Poodles</span>
-</div>
-<div class="mt-2.5">
-<h4 class="font-label-lg text-label-lg text-on-surface line-clamp-1 font-bold">Masticables Dentales Hipoalergénicos</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">Menta silvestre, espirulina y coco para encías delicadas y aliento fresco.</p>
-</div>
-<div class="flex items-center justify-between mt-3 pt-2">
-<span class="font-label-lg text-label-lg text-primary font-bold">$8.90</span>
-<button aria-label="Añadir masticables al bol" class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors" type="button">
-<span class="material-symbols-outlined text-[18px]">add</span>
-</button>
-</div>
-</div>
-<!-- Snack 3 -->
-<div class="min-w-[240px] w-[240px] rounded-xl bg-surface-container-lowest p-3 shadow-sm snap-start flex flex-col justify-between">
-<div class="relative w-full h-32 rounded-lg overflow-hidden bg-surface-container">
-<img class="w-full h-full object-cover" data-alt="Dehydrated wild salmon skin jerky strips for dogs in artisanal paper packaging with fresh rosemary sprig in sunny warm kitchen setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRrCG-_51HY9db_OV9aXOy6nwNDplKU8CgklbvhYCrWOv4W5L3_09Z0oLxOeKb3URhhpkZ9IL-zJQ9MkIQI7B4QBqZtbIz7Hm5ApPEZ2nc4MFKbLaaD_yOE0xiZt8PbI7jOD3iQSh2tS_Nlh82eR1lZULgNQWA12Ktxv1SXIpTnKChMiIk1LPZEABIAs8tFROClp6S5oBefBuZIMJeLGorw2bRltKbS4K53i9TS0yD3M_du_JhXY3G"/>
-<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[10px] uppercase">Brillo de Pelo</span>
-</div>
-<div class="mt-2.5">
-<h4 class="font-label-lg text-label-lg text-on-surface line-clamp-1 font-bold">Crisps Deshidratados de Salmón</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">Pura piel deshidratada al 100%, bomba de colágeno natural para rizos.</p>
-</div>
-<div class="flex items-center justify-between mt-3 pt-2">
-<span class="font-label-lg text-label-lg text-primary font-bold">$9.20</span>
-<button aria-label="Añadir crisps al bol" class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors" type="button">
-<span class="material-symbols-outlined text-[18px]">add</span>
-</button>
-</div>
-</div>
-</div>
-</section>
-<!-- Interactive Breed Quiz Prompt banner -->
-<section class="px-margin mb-space-lg">
-<div class="rounded-xl bg-secondary-fixed p-space-md flex items-center gap-space-md text-on-secondary-fixed">
-<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-secondary shrink-0 shadow-sm">
-<span class="material-symbols-outlined text-[26px]">calculate</span>
-</div>
-<div class="flex-1">
-<h4 class="font-headline-sm text-headline-sm font-bold text-on-secondary-fixed">¿Dudas con la ración exacta?</h4>
-<p class="font-body-sm text-body-sm text-on-secondary-fixed-variant mt-0.5">Calcula gramos por día según edad, nivel de paseo y esterilización en 60 segundos.</p>
-</div>
-<button aria-label="Comenzar calculadora de raciones" class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0" type="button">
-<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
-</button>
-</div>
-</section>
-</div>
-<script>
-  function filterBreed(breed) {
-    const beagleCards = document.querySelectorAll('.beagle-item');
-    const poodleCards = document.querySelectorAll('.poodle-item');
-    const tabs = document.querySelectorAll('.breed-tab');
-
-    // Update active tab styles
-    tabs.forEach(tab => {
-      tab.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
-      tab.classList.add('bg-surface-container-high', 'text-on-surface-variant');
-    });
-
-    const activeTab = document.getElementById('btn-' + breed);
-    if (activeTab) {
-      activeTab.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
-      activeTab.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+  <meta content="mobile_tab" name="shell-type"/>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <style>
+    @layer base{
+      html,body{width:100vw;margin:0;padding:0;}
+      body{overscroll-behavior:none;}
+      .pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}
+      .pt-safe{padding-top:env(safe-area-inset-top,0px);}
     }
+    ::-webkit-scrollbar{display:none;}
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-container": "#3e6649", "on-tertiary": "#ffffff", "on-secondary-container": "#6d3a00", "on-primary": "#ffffff", "on-secondary": "#ffffff", "on-tertiary-fixed": "#1f1b10", "primary": "#264e33", "on-background": "#1c1c19", "outline": "#727971", "surface-tint": "#3f674a", "surface-container-highest": "#e5e2dd", "surface-dim": "#dcdad5", "on-primary-fixed-variant": "#274f34", "secondary-fixed": "#ffdcc2", "surface-container-lowest": "#ffffff", "on-primary-fixed": "#00210d", "background": "#fcf9f4", "tertiary-container": "#635d4f", "on-error-container": "#93000a", "on-surface": "#1c1c19", "tertiary-fixed-dim": "#cec6b5", "inverse-surface": "#31302d", "on-tertiary-container": "#dfd6c5", "secondary-container": "#fea047", "surface-bright": "#fcf9f4", "on-tertiary-fixed-variant": "#4b4639", "on-error": "#ffffff", "on-secondary-fixed-variant": "#6d3a00", "on-surface-variant": "#414942", "on-secondary-fixed": "#2e1500", "outline-variant": "#c1c8bf", "on-primary-container": "#b5e2bd", "surface-container-high": "#ebe8e3", "inverse-on-surface": "#f3f0eb", "error-container": "#ffdad6", "secondary": "#8f4e00", "surface-variant": "#e5e2dd", "tertiary": "#4b4639", "error": "#ba1a1a", "surface-container-low": "#f6f3ee", "tertiary-fixed": "#eae2d0", "primary-fixed-dim": "#a5d1ad", "secondary-fixed-dim": "#ffb77a", "surface": "#fcf9f4", "inverse-primary": "#a5d1ad", "surface-container": "#f0ede9", "primary-fixed": "#c0edc8" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "0.75rem", "space-md": "1rem", "space-lg": "1.5rem", "margin-desktop": "3rem", "space-xl": "2.25rem", "gutter": "1rem", "space-xs": "0.25rem", "margin-tablet": "2rem", "space-sm": "0.5rem", "margin": "1.25rem" }, "fontFamily": { "label-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Epilogue"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Epilogue"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Epilogue"], "headline-md": ["Epilogue"], "headline-xl-mobile": ["Epilogue"], "headline-xl": ["Epilogue"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-xl-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };
+  </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen antialiased selection:bg-primary-fixed selection:text-on-primary-fixed md:bg-surface-container-low">
+  
+  <header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]">
+    <div class="max-w-7xl mx-auto h-16 px-margin flex items-center justify-between">
+      <div class="flex items-center gap-space-sm">
+        <img alt="PawNutri Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApnUqQdVKpDA23orwbO4YvXAHD4Q7Vm111idJe3BK2V-avVE3uMWgWWYXLeWUZ-OE4vVBtNNfALi6pPLYi43JMbmsxPhsXMPDxYavo4LzPG2ERl3aAYrv1KyctRlAy7QMzEc67UvVcimJOBJbCCQs4kVVKI-Fk3hHsiM5ExBGjPRlfUjlVh0o9FBdjTh68JE0vdjhPx_gxi4wT6jB75ZO18377_QTunrCYpmCUIME3h7U8ymDoPC-I"/>
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm text-primary leading-none tracking-tight">PawNutri</span>
+          <span class="font-label-sm text-label-sm text-secondary leading-none uppercase tracking-wider">Gourmet &amp; Care</span>
+        </div>
+      </div>
+      <!-- Desktop Nav Links -->
+      <div class="hidden md:flex items-center gap-6 font-label-md text-primary">
+        <a href="#" class="hover:text-secondary transition-colors">Explorar</a>
+        <a href="#" class="hover:text-secondary transition-colors">Planes</a>
+        <a href="#" class="hover:text-secondary transition-colors">Pedidos</a>
+      </div>
+      <div class="flex items-center gap-space-xs">
+        <button aria-label="Notificaciones" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150">
+          <span class="material-symbols-outlined text-[22px]">notifications</span>
+          <span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary-container"></span>
+        </button>
+        <button aria-label="Cesta de compra" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150">
+          <span class="material-symbols-outlined text-[22px]">shopping_basket</span>
+          <span class="absolute top-1.5 right-1.5 min-w-[16px] h-4 px-1 rounded-full bg-primary text-on-primary font-label-sm text-[10px] flex items-center justify-center">2</span>
+        </button>
+        <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs">
+          <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    if (breed === 'all') {
-      beagleCards.forEach(c => c.style.display = 'block');
-      poodleCards.forEach(c => c.style.display = 'block');
-    } else if (breed === 'beagle') {
-      beagleCards.forEach(c => c.style.display = 'block');
-      poodleCards.forEach(c => c.style.display = 'none');
-    } else if (breed === 'poodle') {
-      beagleCards.forEach(c => c.style.display = 'none');
-      poodleCards.forEach(c => c.style.display = 'block');
-    }
-  }
-</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(38,78,51,0.05)]" data-active-classes="text-primary font-bold"><div class="h-16 px-space-sm flex items-center justify-around"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 transition-colors duration-150 text-primary font-bold" data-path="home-explorar" href="#"><span class="material-symbols-outlined text-[22px]">storefront</span><span class="font-label-sm text-label-sm">Explorar</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors duration-150" data-path="planes-nutricionales" href="#"><span class="material-symbols-outlined text-[22px]">spa</span><span class="font-label-sm text-label-sm">Planes</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors duration-150" data-path="pedidos" href="#"><span class="material-symbols-outlined text-[22px]">local_shipping</span><span class="font-label-sm text-label-sm">Pedidos</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors duration-150" data-path="perfil" href="#"><span class="material-symbols-outlined text-[22px]">pets</span><span class="font-label-sm text-label-sm">Perfil</span></a></div></nav></body></html>
+  <main class="flex flex-col relative w-full max-w-7xl mx-auto pt-16 pb-24 md:pb-12 bg-surface md:bg-transparent min-h-screen md:mt-6">
+    <div class="flex flex-col w-full bg-surface md:rounded-2xl md:shadow-sm md:overflow-hidden md:pb-8">
+      
+      <!-- Top Greeting & Breed Switcher Header -->
+      <section class="px-margin pt-space-md pb-space-xs">
+        <div class="flex items-center justify-between mb-space-xs">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed">
+            <span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+            <span class="font-label-sm text-label-sm uppercase tracking-wider">Cocina Artesanal Canina</span>
+          </div>
+          <span class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1">
+            <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span> Cocinado hoy
+          </span>
+        </div>
+        <h1 class="font-headline-xl-mobile md:text-4xl text-headline-xl-mobile text-primary tracking-tight leading-tight md:max-w-2xl">
+          Nutrición natural a la medida de tu mejor amigo
+        </h1>
+        <p class="font-body-md text-body-md text-on-surface-variant mt-1.5 md:text-lg md:max-w-2xl">
+          Ingredientes reales cocinados al vapor a baja temperatura para conservar nutrientes vivos y sabor irresistible.
+        </p>
+        
+        <!-- Breed Quick Filter Tabs -->
+        <div class="flex items-center gap-space-sm mt-space-md overflow-x-auto pb-1" id="breed-filter-group">
+          <button class="breed-tab flex items-center gap-1.5 px-4 py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all duration-200" id="btn-all" onclick="filterBreed('all')" type="button">
+            <span class="material-symbols-outlined text-[18px]">tune</span>
+            <span>Todos los planes</span>
+          </button>
+          <button class="breed-tab flex items-center gap-1.5 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all duration-200" id="btn-beagle" onclick="filterBreed('beagle')" type="button">
+            <span class="material-symbols-outlined text-[18px]">pets</span>
+            <span>Beagles activos</span>
+          </button>
+          <button class="breed-tab flex items-center gap-1.5 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all duration-200" id="btn-poodle" onclick="filterBreed('poodle')" type="button">
+            <span class="material-symbols-outlined text-[18px]">cruelty_free</span>
+            <span>Poodles &amp; Caniches</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Featured Breed Tailored Nutrition Plans Cards -->
+      <section class="px-margin pt-space-sm grid grid-cols-1 md:grid-cols-2 gap-space-md">
+        <!-- Beagle Tailored Card -->
+        <article class="breed-card beagle-item rounded-xl bg-surface-container-lowest shadow-[0_8px_24px_-4px_rgba(62,102,73,0.08)] overflow-hidden transition-transform duration-200 hover:shadow-md">
+          <div class="relative w-full h-56 md:h-64 bg-surface-container">
+            <img alt="Beagle feliz frente a su cuenco" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD07mDdJ4FIPrriwADZ99lOlbc7SDy1ky5XUEw_cOPCgndDGm5FbQiEYJRsny2MtuerpfDpfREUmMpVcZWCLQc3ARX2RzEpd7_VJVx_vpn8X5VTlV33PUazMy10OXibBEwC-O_72T6SA9QQwjct1vCLi_1BwcGcqBHvk0jUm9d2Hc3wbJKiI3FFdht4LpdXZtcn8SC3PVFaYhZX5eAJryFhNtgB5y6p-dEJLqXIamiNQqbjGk1FM8YH"/>
+            <div class="absolute top-3 left-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+              <span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wide">Especial Beagles</span>
+            </div>
+            <div class="absolute top-3 right-3 flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest/95 backdrop-blur-md text-on-surface shadow-sm">
+              <span class="material-symbols-outlined text-[16px] text-secondary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="font-label-md text-label-md font-bold">4.9</span>
+              <span class="font-body-sm text-body-sm text-on-surface-variant">(142)</span>
+            </div>
+            <div class="absolute bottom-2 left-3 right-3 flex items-center justify-between px-3 py-1.5 rounded-lg bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface">
+              <div class="flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">scale</span>
+                <span class="font-label-sm text-label-sm">Control calórico inteligente &amp; saciedad</span>
+              </div>
+              <span class="font-label-sm text-label-sm text-secondary-fixed">Gluten Free</span>
+            </div>
+          </div>
+          <div class="p-space-md flex flex-col h-full">
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <h2 class="font-headline-sm text-headline-sm text-primary tracking-tight">Plan Vitalidad Beagle</h2>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Control de peso, energía prolongada y articulaciones fuertes</p>
+              </div>
+              <div class="text-right shrink-0">
+                <span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Suscripción</span>
+                <span class="font-headline-sm text-headline-sm text-primary font-bold">$34.99</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant block">/mes</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-1.5 mt-space-sm">
+              <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-primary">restaurant</span> Pollo de granja 55%</span>
+              <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-primary">spa</span> Guisantes &amp; Zanahoria</span>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface mt-space-sm leading-relaxed mb-4">
+              Fórmula con alto contenido de fibra saciante para canalizar el apetito insaciable de los beagles, reforzada con condroprotectores.
+            </p>
+            <div class="flex items-center gap-space-sm mt-auto pt-space-xs">
+              <button class="flex-1 h-12 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 transition-all shadow-sm" type="button">
+                <span>Ver menú &amp; porción</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Poodle Tailored Card -->
+        <article class="breed-card poodle-item rounded-xl bg-surface-container-lowest shadow-[0_8px_24px_-4px_rgba(62,102,73,0.08)] overflow-hidden transition-transform duration-200 hover:shadow-md">
+          <div class="relative w-full h-56 md:h-64 bg-surface-container">
+            <img alt="Poodle caniche canela esponjoso" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYwsbjOD9GjodUtn4KxfKtCB-vG2XWQ-IFVJi26vMRpk4LsTbd2znHjBeefGv8EY9VJ3nqqXwuWA1QHhIG_lGT9N1IHdfZtUExsn12msvRXPJm33tSyi0RmdrVfM6Qp5on_UkT6oI6YMo4oMwyi9PAehh5osvmapZBfJz60YIuW6RiO4Js-omsY8_NsNpwa0RwPe422kGXLp46b4c5QJhelqtEOdj_vaqa0fP7jepT5DYZwk3LFEq3"/>
+            <div class="absolute top-3 left-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-primary"></span>
+              <span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wide">Especial Poodles</span>
+            </div>
+            <div class="absolute top-3 right-3 flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest/95 backdrop-blur-md text-on-surface shadow-sm">
+              <span class="material-symbols-outlined text-[16px] text-secondary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="font-label-md text-label-md font-bold">5.0</span>
+              <span class="font-body-sm text-body-sm text-on-surface-variant">(189)</span>
+            </div>
+            <div class="absolute bottom-2 left-3 right-3 flex items-center justify-between px-3 py-1.5 rounded-lg bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface">
+              <div class="flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[16px] text-secondary-fixed">auto_awesome</span>
+                <span class="font-label-sm text-label-sm">Rizos sedosos + Alta palatabilidad</span>
+              </div>
+              <span class="font-label-sm text-label-sm text-primary-fixed-dim">Digestión Fácil</span>
+            </div>
+          </div>
+          <div class="p-space-md flex flex-col h-full">
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <h2 class="font-headline-sm text-headline-sm text-primary tracking-tight">Plan Piel y Pelaje Radiante Poodle</h2>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Rico en Omega 3-6, biotina y digestión hipoalergénica</p>
+              </div>
+              <div class="text-right shrink-0">
+                <span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Suscripción</span>
+                <span class="font-headline-sm text-headline-sm text-primary font-bold">$38.99</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant block">/mes</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-1.5 mt-space-sm">
+              <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-secondary">water_drop</span> Salmón del Atlántico 50%</span>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface mt-space-sm leading-relaxed mb-4">
+              Diseñado para paladares exigentes y pelajes que requieren hidratación intensiva. Reduce irritaciones cutáneas.
+            </p>
+            <div class="flex items-center gap-space-sm mt-auto pt-space-xs">
+              <button class="flex-1 h-12 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 transition-all shadow-sm" type="button">
+                <span>Ver menú &amp; porción</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- 100% Human Grade Badges Section -->
+      <section class="mt-space-lg px-margin">
+        <div class="rounded-xl bg-surface-container-low p-space-md">
+          <div class="flex items-center gap-2 mb-space-sm">
+            <span class="material-symbols-outlined text-primary text-[24px]">verified</span>
+            <h3 class="font-headline-sm text-headline-sm text-primary">Ingredientes 100% Grado Humano</h3>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md max-w-3xl">
+            Comida real cocinada en cocinas de estándar gastronómico humano con trazabilidad total. Sin subproductos, harinas misteriosas ni químicos.
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm">
+            <div class="p-3 rounded-lg bg-surface-container-lowest flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shrink-0">
+                <span class="material-symbols-outlined text-[20px]">egg_alt</span>
+              </div>
+              <div>
+                <span class="font-label-md text-label-md text-on-surface block font-bold">Carne fresca</span>
+              </div>
+            </div>
+            <div class="p-3 rounded-lg bg-surface-container-lowest flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed shrink-0">
+                <span class="material-symbols-outlined text-[20px]">do_not_disturb_on</span>
+              </div>
+              <div>
+                <span class="font-label-md text-label-md text-on-surface block font-bold">Sin conservantes</span>
+              </div>
+            </div>
+            <div class="p-3 rounded-lg bg-surface-container-lowest flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed shrink-0">
+                <span class="material-symbols-outlined text-[20px]">medical_services</span>
+              </div>
+              <div>
+                <span class="font-label-md text-label-md text-on-surface block font-bold">Aval veterinario</span>
+              </div>
+            </div>
+            <div class="p-3 rounded-lg bg-surface-container-lowest flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shrink-0">
+                <span class="material-symbols-outlined text-[20px]">ac_unit</span>
+              </div>
+              <div>
+                <span class="font-label-md text-label-md text-on-surface block font-bold">Cadena de frío</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Natural Treats & Snacks Carousel -->
+      <section class="mt-space-lg mb-space-lg">
+        <div class="px-margin flex items-center justify-between mb-space-sm">
+          <div>
+            <h3 class="font-headline-sm text-headline-sm text-primary">Premios &amp; Snacks Naturales</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Ideales para adiestramiento positivo y refuerzo dental</p>
+          </div>
+        </div>
+        <!-- Scroll on Mobile / Grid on Desktop -->
+        <div class="flex gap-space-sm overflow-x-auto px-margin pb-2 snap-x md:grid md:grid-cols-3 md:overflow-visible md:snap-none">
+          <!-- Snack 1 -->
+          <div class="min-w-[240px] w-full rounded-xl bg-surface-container-lowest p-3 shadow-sm snap-start flex flex-col justify-between">
+            <div class="relative w-full h-40 md:h-48 rounded-lg overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfB8znJNdEx27KV1lNZ4YMW2ZEcihBWBKW2rk_RlL6g4WvnsT8UzYW7iAm02dP_wHjYXBOigLMpC88p64kFDIRrkhf8YP4tgjM65cWwtTqE8llqiO4a7lq8uEIyCNk88osEcYNmOccUs_IZEVvdlx_zVK5GHkLjXkQPnNdxNKGV3299MqseQQ8ZmcPyeY33879s8oY08j6Sj6Rhf7Tf4iV3h_SOMjM69WQq4NVl5vzSlEIysLASiMZ"/>
+            </div>
+            <div class="mt-2.5">
+              <h4 class="font-label-lg text-label-lg text-on-surface line-clamp-1 font-bold">Galletas Crujientes</h4>
+              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">Horneadas a fuego lento, bajas en grasa.</p>
+            </div>
+            <div class="flex items-center justify-between mt-3 pt-2">
+              <span class="font-label-lg text-label-lg text-primary font-bold">$7.50</span>
+              <button class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">add</span></button>
+            </div>
+          </div>
+          <!-- Snack 2 -->
+          <div class="min-w-[240px] w-full rounded-xl bg-surface-container-lowest p-3 shadow-sm snap-start flex flex-col justify-between">
+            <div class="relative w-full h-40 md:h-48 rounded-lg overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt9KMIpFZvTDV3R4cpFdNC1lVgWPsEK3UAZHo2YMXV_alg4qA5F_NO2wevdaqTcELIbSeJpn0koJ7EFEJSl74cjUuPSQab5WnvGr31JDE7Dqog_Xr3sSmSQaTSQ8vhRE6r2_sk0_Ej3N2To6Mt34urDSG8VPOe1Dq7iNFg71gEQR9438osVzXwFsmiVYEfbP26Fm7FwHZA7ly6cr0ftYBseneSYz5QDOnEuhxmFndhjbqUn89_E_O_"/>
+            </div>
+            <div class="mt-2.5">
+              <h4 class="font-label-lg text-label-lg text-on-surface line-clamp-1 font-bold">Masticables Dentales</h4>
+              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">Menta silvestre, espirulina y coco.</p>
+            </div>
+            <div class="flex items-center justify-between mt-3 pt-2">
+              <span class="font-label-lg text-label-lg text-primary font-bold">$8.90</span>
+              <button class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">add</span></button>
+            </div>
+          </div>
+          <!-- Snack 3 -->
+          <div class="min-w-[240px] w-full rounded-xl bg-surface-container-lowest p-3 shadow-sm snap-start flex flex-col justify-between">
+            <div class="relative w-full h-40 md:h-48 rounded-lg overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRrCG-_51HY9db_OV9aXOy6nwNDplKU8CgklbvhYCrWOv4W5L3_09Z0oLxOeKb3URhhpkZ9IL-zJQ9MkIQI7B4QBqZtbIz7Hm5ApPEZ2nc4MFKbLaaD_yOE0xiZt8PbI7jOD3iQSh2tS_Nlh82eR1lZULgNQWA12Ktxv1SXIpTnKChMiIk1LPZEABIAs8tFROClp6S5oBefBuZIMJeLGorw2bRltKbS4K53i9TS0yD3M_du_JhXY3G"/>
+            </div>
+            <div class="mt-2.5">
+              <h4 class="font-label-lg text-label-lg text-on-surface line-clamp-1 font-bold">Crisps de Salmón</h4>
+              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">Bomba de colágeno natural para rizos.</p>
+            </div>
+            <div class="flex items-center justify-between mt-3 pt-2">
+              <span class="font-label-lg text-label-lg text-primary font-bold">$9.20</span>
+              <button class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">add</span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    
+    <script>
+      function filterBreed(breed) {
+        const beagleCards = document.querySelectorAll('.beagle-item');
+        const poodleCards = document.querySelectorAll('.poodle-item');
+        const tabs = document.querySelectorAll('.breed-tab');
+        tabs.forEach(tab => {
+          tab.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+          tab.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+        });
+        const activeTab = document.getElementById('btn-' + breed);
+        if (activeTab) {
+          activeTab.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+          activeTab.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+        }
+        if (breed === 'all') {
+          beagleCards.forEach(c => c.style.display = 'block');
+          poodleCards.forEach(c => c.style.display = 'block');
+        } else if (breed === 'beagle') {
+          beagleCards.forEach(c => c.style.display = 'block');
+          poodleCards.forEach(c => c.style.display = 'none');
+        } else if (breed === 'poodle') {
+          beagleCards.forEach(c => c.style.display = 'none');
+          poodleCards.forEach(c => c.style.display = 'block');
+        }
+      }
+    </script>
+  </main>
+  
+  <!-- Navegación inferior (Oculta en PC usando md:hidden) -->
+  <nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(38,78,51,0.05)] md:hidden">
+    <div class="h-16 px-space-sm flex items-center justify-around">
+      <a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-primary font-bold" href="#">
+        <span class="material-symbols-outlined text-[22px]">storefront</span>
+        <span class="font-label-sm text-label-sm">Explorar</span>
+      </a>
+      <a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant hover:text-on-surface" href="#">
+        <span class="material-symbols-outlined text-[22px]">spa</span>
+        <span class="font-label-sm text-label-sm">Planes</span>
+      </a>
+      <a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant hover:text-on-surface" href="#">
+        <span class="material-symbols-outlined text-[22px]">local_shipping</span>
+        <span class="font-label-sm text-label-sm">Pedidos</span>
+      </a>
+      <a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant hover:text-on-surface" href="#">
+        <span class="material-symbols-outlined text-[22px]">pets</span>
+        <span class="font-label-sm text-label-sm">Perfil</span>
+      </a>
+    </div>
+  </nav>
+</body>
+</html>
